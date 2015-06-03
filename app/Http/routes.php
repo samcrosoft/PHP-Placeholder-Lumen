@@ -18,7 +18,9 @@ $app->get('/', function() use ($app) {
 
     $oPlaceholder = new Placeholder();
 
-    //$oImage =  $oPlaceholder->makePlaceHolder(500,200, 'FREE ME PLEASE', '#9BCE3B', "#fff");
+    /*
+     * Create the placeholder image
+     */
     $oImage = $oPlaceholder->makePlaceholderFromURL();
 
     ob_start();
